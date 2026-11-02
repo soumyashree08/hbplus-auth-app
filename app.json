@@ -1,24 +1,24 @@
 {
   "expo": {
     "name": "HBPlusAuth",
-    "slug": "HBPlusAuth",
+    "slug": "hbplus-auth",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "hbplusauth",
+
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.hbplus.auth",
+      "googleServicesFile": "./GoogleService-Info.plist"
     },
+
     "android": {
-      "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      "package": "com.hbplus.auth",
+      "googleServicesFile": "./google-services.json"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+
+    "plugins": [
+      "@react-native-google-signin/google-signin"
+    ]
   }
 }
