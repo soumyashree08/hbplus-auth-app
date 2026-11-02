@@ -16,4 +16,4 @@ GoogleService-Info.plist
 .DS_Store
 
 android/
-ios/
+ios/.idea/ 
